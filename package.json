@@ -1,0 +1,33 @@
+{
+  "name": "11ty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/onodo/11ty.git",
+  "author": "mami tsuchiya <mami_tsuchiya@beeworks.co.jp>",
+  "license": "MIT",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "1.0.2",
+    "@acab/reset.css": "^0.5.3",
+    "autoprefixer": "^10.4.14",
+    "connect-ssi": "^1.1.1",
+    "eleventy-plugin-tailwindcss": "^0.3.0",
+    "eleventy-sass": "^2.2.1",
+    "esbuild": "^0.17.14",
+    "eslint": "^8.37.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.6",
+    "stylelint": "14.15.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-recommended-scss": "^9.0.1",
+    "tailwindcss": "3.2.1"
+  }
+}
