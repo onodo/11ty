@@ -9,12 +9,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     port: 8081,
     open: "local",
-    middleware: [
-      connectSSI({
-        baseDir: __dirname + '/dist',
-        ext: '.html'
-      })
-    ]
+    // middleware: [
+    //   connectSSI({
+    //     baseDir: __dirname + '/dist',
+    //     ext: '.html'
+    //   })
+    // ]
   });
 
   eleventyConfig.setNunjucksEnvironmentOptions({
@@ -23,10 +23,10 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(pluginTailwindCSS,{
-    src: './src/css/style.scss'
+    src: './src/css/tailwind.css'
   });
   eleventyConfig.addPlugin(eleventySass, {
-    postcss: postcss([require("postcss-import"), tailwindcss("./tailwind.config.js"), require("autoprefixer")])
+    postcss: postcss([require("postcss-import"), tailwindcss("./tailwind.config.js"), require("autoprefixer")]),
   });
 
   eleventyConfig.on("eleventy.before", async () => {
